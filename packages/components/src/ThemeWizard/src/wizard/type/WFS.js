@@ -114,7 +114,7 @@ export default function WFS(props) {
     ];
 
     let wfsDataCRSOptions = [
-      { key: 'default', value: '', label: t("specifiedByService", "Especificado pelo Serviço") },
+      { key: 0, value: 0, label: t("specifiedByService", "Especificado pelo Serviço") },
       { key: 4326, value: 4326, label: 'EPSG:4326' },
       { key: 3857, value: 3857, label: 'EPSG:3857' }
     ]
@@ -190,7 +190,7 @@ export default function WFS(props) {
                 <div className="p-col-12 p-md-8">
                   <Dropdown
                     options={wfsDataCRSOptions}
-                    value={wfsDataCRS || ''}
+                    value={wfsDataCRS || 0}
                     onChange={(e) => editField('wfsDataCRS', e.value)}
                   />
                 </div>

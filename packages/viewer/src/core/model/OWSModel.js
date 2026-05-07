@@ -7,7 +7,6 @@ import * as OlExtent from 'ol/extent';
 import { generateRGBA, removeUrlParam, addUrlParam } from '../utils';
 import FileSaver from 'file-saver';
 import proj4 from 'proj4';
-import { data } from 'browserslist';
 
 
 const getCRSCode = (val) => {
